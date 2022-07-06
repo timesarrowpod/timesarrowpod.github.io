@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="content">
+
+    <p>Published: {{ page.date | date: "%b %-d, %Y" }}</p>
+
+    {% if page.series %}
+        {% include series.html %}
+    {% endif %}
+
+    {{ content }}
+</div>
+
+<div>
+  {% if page.mp3_url %}
+    <figure>
+      <figcaption>Listen to the episode</figcaption>
+      <audio
+          controls
+          src="{{ page.mp3_url }}">
+              Your browser does not support the
+              <code>audio</code> element.
+      </audio>
+    </figure>
+
+    <a href="{{ page.mp3_url }}">Download the episode</a>
+  {% endif %}
+</div>
+
+<div class="tags">
+    {% for tag in page.tags %}
+      {% include tag.html tag=tag %}
+    {% endfor %}
+</div>
+
+{% unless site.hide_share_buttons %}
+{% include share-buttons.html %}
+{% endunless %}
+
+{% if site.disqus.shortname %}
+  {% include disqus.html %}
+{% endif %}
