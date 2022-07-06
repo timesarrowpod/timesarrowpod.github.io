@@ -22,18 +22,20 @@ image: "/images/siddig.png"
 mp3_url: "/audio/hangupthephone.mp3"
 mp3_length: 4013799
 ---
-Everything after the second set of dashes is a description of the episode. The first paragraph (this paragraph) will be used as the excerpt.
+Everything after the second set of dashes is a description of the episode. The
+first paragraph (this paragraph) will be used as the excerpt.
 
 Put the date and time in the date field.
 
-Put the audio file for the episode in the "audio" directory. It must be an MP3. The filename can't
-have any spaces or special characters (best to keep it to letters and numbers).
+Put the audio file for the episode in the "audio" directory. It must be an MP3.
+The filename can't have any spaces or special characters (best to keep it to
+letters and numbers).
 
-Put the size of the audio file *in bytes* in the mp3_length field. So if the mp3 is 4MB large, don't put
-"4", put the exact number of bytes - "4013799".
+Put the size of the audio file *in bytes* in the mp3_length field. So if the mp3
+is 4MB large, don't put "4", put the exact number of bytes - "4013799".
 
-Put an (optional) image for the episode in the "images" directory. The image filename shouldn't
-have any spaces or special characters.
+Put an (optional) image for the episode in the "images" directory. The image
+filename shouldn't have any spaces or special characters.
 
 Make sure "episodes" is listed in the "categories" field and "layout" is "episode".
 ```
